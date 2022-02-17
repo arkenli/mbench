@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<parameters>
+
+    <!-- Connection details -->
+    <type>MYSQL</type>
+    <driver>com.mysql.cj.jdbc.Driver</driver>
+    <url>jdbc:mysql://localhost:3306/mbench?rewriteBatchedStatements=true</url>
+    <username>root</username>
+    <password>lsh199856</password>
+    <isolation>TRANSACTION_SERIALIZABLE</isolation>
+    <batchsize>128</batchsize>
+
+    <!-- Scale factor is the number of warehouses in TPCC -->
+    <scalefactor>5</scalefactor>
+
+    <!-- The workload -->
+    <terminals>5</terminals>
+    <works>
+        <work>
+            <time>150</time>
+            <rate>10000</rate>
+            <weights>45,43,4,4,4</weights>
+        </work>
+    </works>
+
+    <!-- The migration, notice that time is in second-->
+    <migration>
+        <benchcase>deleteColumn</benchcase>
+        <util>none</util>
+        <before>40</before>
+        <timepoint>40,50,80</timepoint>
+        <number>1,3,1</number>
+    </migration>
+
+    <!-- TPCC specific -->
+    <transactiontypes>
+        <transactiontype>
+            <name>NewOrder</name>
+        </transactiontype>
+        <transactiontype>
+            <name>Payment</name>
+        </transactiontype>
+        <transactiontype>
+            <name>OrderStatus</name>
+        </transactiontype>
+        <transactiontype>
+            <name>Delivery</name>
+        </transactiontype>
+        <transactiontype>
+            <name>StockLevel</name>
+        </transactiontype>
+    </transactiontypes>
+</parameters>

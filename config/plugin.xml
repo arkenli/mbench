@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<plugins>
+    <plugin name="tpcc">com.mbench.benchmarks.tpcc.TPCCBenchmark</plugin>
+    <plugin name="tpch">com.mbench.benchmarks.tpch.TPCHBenchmark</plugin>
+    <plugin name="tatp">com.mbench.benchmarks.tatp.TATPBenchmark</plugin>
+    <plugin name="wikipedia">com.mbench.benchmarks.wikipedia.WikipediaBenchmark</plugin>
+    <plugin name="resourcestresser">com.mbench.benchmarks.resourcestresser.ResourceStresserBenchmark</plugin>
+    <plugin name="twitter">com.mbench.benchmarks.twitter.TwitterBenchmark</plugin>
+    <plugin name="epinions">com.mbench.benchmarks.epinions.EpinionsBenchmark</plugin>
+    <plugin name="ycsb">com.mbench.benchmarks.ycsb.YCSBBenchmark</plugin>
+    <plugin name="seats">com.mbench.benchmarks.seats.SEATSBenchmark</plugin>
+    <plugin name="auctionmark">com.mbench.benchmarks.auctionmark.AuctionMarkBenchmark</plugin>
+    <plugin name="chbenchmark">com.mbench.benchmarks.chbenchmark.CHBenCHmark</plugin>
+    <plugin name="voter">com.mbench.benchmarks.voter.VoterBenchmark</plugin>
+    <plugin name="sibench">com.mbench.benchmarks.sibench.SIBenchmark</plugin>
+    <plugin name="noop">com.mbench.benchmarks.noop.NoOpBenchmark</plugin>
+    <plugin name="smallbank">com.mbench.benchmarks.smallbank.SmallBankBenchmark</plugin>
+    <plugin name="hyadapt">com.mbench.benchmarks.hyadapt.HYADAPTBenchmark</plugin>
+    <plugin name="mtpcc">com.mbench.mbenches.mtpcc.mTPCCBench</plugin>
+</plugins>
